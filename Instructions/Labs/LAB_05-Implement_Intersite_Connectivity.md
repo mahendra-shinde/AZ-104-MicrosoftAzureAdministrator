@@ -35,8 +35,6 @@ In this task, you will deploy three virtual machines, each into a separate virtu
 
     >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and click **Create storage**. 
 
-1. In the toolbar of the Cloud Shell pane, click the **Upload/Download files** icon, in the drop-down menu, click **Upload** and upload the files **\\Allfiles\\Labs\\05\\az104-05-vnetvm-template.json** and **\\Allfiles\\Labs\\05\\az104-05-vnetvm-parameters.json** into the Cloud Shell home directory.
-
 1. Download the ARM Template files using following command:
     
     ```pwsh
@@ -44,10 +42,10 @@ In this task, you will deploy three virtual machines, each into a separate virtu
     wget https://raw.githubusercontent.com/mahendra-shinde/AZ-104-MicrosoftAzureAdministrator/master/Allfiles/Labs/05/az104-05-vnetvm-parameters.json
     ```
 
-1. From the Cloud Shell pane, run the following to create the first resource group that will be hosting the first virtual network and the pair of virtual machines (replace the `[Azure_region_1]` placeholder with the name of an Azure region where you intend to deploy these Azure virtual machines):
+1. From the Cloud Shell pane, run the following to create the first resource group that will be hosting the first virtual network and the pair of virtual machines (replace the `southeast asia` placeholder with the name of an Azure region where you intend to deploy these Azure virtual machines):
 
    ```pwsh
-   $location = '[Azure_region_1]'
+   $location = 'southeast asia'
 
    $rgName = 'az104-05-rg0'
 
