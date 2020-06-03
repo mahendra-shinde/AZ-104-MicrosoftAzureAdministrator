@@ -42,10 +42,18 @@ In this task, you will deploy four virtual machines into the same Azure region. 
 
 1. In the toolbar of the Cloud Shell pane, click the **Upload/Download files** icon, in the drop-down menu, click **Upload** and upload the files **\\Allfiles\\Module_06\\az104-06-vms-template.json**, **\\Allfiles\\Labs\\06\\az104-06-vm-template.json**, and **\\Allfiles\\Labs\\06\\az104-06-vm-parameters.json** into the Cloud Shell home directory.
 
-1. From the Cloud Shell pane, run the following to create the first resource group that will be hosting the first virtual network and the pair of virtual machines (replace the `[Azure_region]` placeholder with the name of an Azure region where you intend to deploy Azure virtual machines):
+1. Use following commands to download the ARM Template
+
+    ```pwsh
+    wget https://raw.githubusercontent.com/mahendra-shinde/AZ-104-MicrosoftAzureAdministrator/master/Allfiles/Labs/06/az104-06-vms-template.json
+    wget https://raw.githubusercontent.com/mahendra-shinde/AZ-104-MicrosoftAzureAdministrator/master/Allfiles/Labs/06/az104-06-vm-template.json
+    wget https://raw.githubusercontent.com/mahendra-shinde/AZ-104-MicrosoftAzureAdministrator/master/Allfiles/Labs/06/az104-06-vm-parameters.json
+    ```
+
+1. From the Cloud Shell pane, run the following to create the first resource group that will be hosting the first virtual network and the pair of virtual machines (replace the `Southeast Asia` placeholder with the name of an Azure region where you intend to deploy Azure virtual machines):
 
    ```pwsh
-   $location = '[Azure_region]'
+   $location = 'Southeast Asia'
 
    $rgName = 'az104-06-rg1'
 
