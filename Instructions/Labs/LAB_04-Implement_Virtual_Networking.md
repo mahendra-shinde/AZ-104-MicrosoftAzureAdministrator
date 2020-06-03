@@ -74,9 +74,11 @@ In this task, you will deploy Azure virtual machines into different subnets of t
 
     >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and click **Create storage**. 
 
-1. In the toolbar of the Cloud Shell pane, click the **Upload/Download files** icon, in the drop-down menu, click **Upload** and upload the files **\\Allfiles\\Labs\\04\\az104-04-vms-template.json** and **\\Allfiles\\Labs\\04\\az104-04-vms-parameters.json** into the Cloud Shell home directory.
-
-    >**Note**: You might need to upload each file separately.
+1. Use following command to download both JSON files
+    ```
+    $ wget https://raw.githubusercontent.com/mahendra-shinde/AZ-104-MicrosoftAzureAdministrator/master/Allfiles/Labs/04/az104-04-vms-parameters.json
+    $ wget https://raw.githubusercontent.com/mahendra-shinde/AZ-104-MicrosoftAzureAdministrator/master/Allfiles/Labs/04/az104-04-vms-template.json
+    ```
 
 1. From the Cloud Shell pane, run the following to deploy two virtual machines by using the template and parameter files you uploaded:
 
