@@ -113,7 +113,7 @@ In this task, you will deploy a pod into the Azure Kubernetes Service cluster.
 1. From the **Cloud Shell** pane, run the following to deploy the **nginx** image from the Docker Hub:
 
     ```sh
-    kubectl create deployment nginx-deployment --image=nginx
+    kubectl create deployment nginx-deployment --image=mahendrshinde/myweb:latest
     ```
 
     > **Note**: Make sure to use lower case letters when typing the name of the deployment (nginx-deployment)
