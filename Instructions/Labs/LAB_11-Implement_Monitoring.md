@@ -40,7 +40,12 @@ In this task, you will deploy a virtual machine that will be used to test monito
 
     >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and click **Create storage**. 
 
-1. In the toolbar of the Cloud Shell pane, click the **Upload/Download files** icon, in the drop-down menu, click **Upload** and upload the files **\\Allfiles\\Labs\\11\\az104-11-vm-template.json** and **\\Allfiles\\Labs\\11\\az104-11-vm-parameters.json** into the Cloud Shell home directory.
+1. Download the ARM Template
+
+    ```pwsh
+    wget https://raw.githubusercontent.com/mahendra-shinde/AZ-104-MicrosoftAzureAdministrator/master/Allfiles/Labs/11/az104-11-vm-template.json
+    wget https://raw.githubusercontent.com/mahendra-shinde/AZ-104-MicrosoftAzureAdministrator/master/Allfiles/Labs/11/az104-11-vm-parameters.json
+    ```
 
 1. From the Cloud Shell pane, run the following to create the resource group that will be hosting the virtual machines (replace the `[Azure_region]` placeholder with the name of an Azure region where you intend to deploy Azure virtual machines):
 
